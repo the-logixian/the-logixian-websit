@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Obembe</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Michroma&family=Syncopate:wght@400;700&family=Unica+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <h1><a href="#">The Logixian</a></h1>
+      <ul class="nav-menu">
+        <li class="nav-items"><a href="#about">About</a></li>
+        <li class="nav-items"><a href="#skills">Skills</a></li>
+        <li class="nav-items"><a href="#testimonials">Testimonials</a></li>
+        <li class="nav-items"><a href="#contact">Contact</a></li>
+        <li class="close-menu">
+          <button class="close-btn">x</button>
+        </li>
+      </ul>
+      <button class="hamburger">
+        <!-- <img src="./Assets/more.png" alt="Menu" /> -->
+      </button>
+    </nav>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector("nav ul");
+      const closeBtn = document.querySelector(".close-btn");
+
+      hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+        hamburger.classList.toggle("active");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+        hamburger.classList.remove("active");
+      });
+    </script>
+
+    <!-- Hero Section -->
+
+    <div id="hero">
+      <div class="hero-section">
+        <div>
+          <h1>I Build Interfaces That People <br />Actually Love Using.</h1>
+          <h2>I'm Daniel Obembe — The Logixian.</h2>
+          <p>
+            A Web & UI Developer who turns complex ideas into clean, bold, and
+            intuitive digital experiences. <br />Welcome to my corner of the
+            internet.
+          </p>
+          <button class="hero-button">See My Work</button>
+          <button class="hero-button">Let's Connect</button>
+        </div>
+        <div class="hero-img">
+          <img src="./Assets/IMG_1482.jpg" alt="Hero image" />
+        </div>
+      </div>
+    </div>
+
+    <div id="about" class="about-me">
+      <div class="about-info">
+        <h1>The Mind Behind the Logixian</h1>
+        <p>
+          I'm Daniel Obembe — a Web & UI Developer with a passion for crafting
+          interfaces that are as smart as they are beautiful. I believe great
+          design isn't just about how things look, it's about how they feel to
+          use.
+        </p>
+
+        <p>
+          The name "The Logixian"? It's who I am. Someone who finds logic in
+          creativity and creativity in logic. Every pixel I place has a purpose.
+          Every layout I build tells a story. When I'm not pushing code or
+          perfecting a UI, I'm studying what makes people click, scroll, and
+          stay — and then building exactly that.
+        </p>
+
+        <button>Download My CV</button>
+      </div>
+
+      <!-- <div class="about-img">
+        <img src="./Assets/obembe.png" alt="About section image" />
+      </div> -->
+    </div>
+
+    <section id="skills" class="skills">
+      <div class="skill-title">
+        <h2>My Skills</h2>
+      </div>
+      <div class="skill-items">
+        <div class="skill-card">
+          <h3>💻 Web Development</h3>
+          <p>
+            From semantic HTML and responsive CSS to dynamic JavaScript
+            interactions — I build websites that work flawlessly across every
+            screen size and device. Fast, accessible, and built to last.
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <h3>🎨 UI Design</h3>
+          <p>
+            I design interfaces with intention. Clean layouts, thoughtful
+            typography, and bold visual hierarchies that guide users naturally
+            from point A to point B — without them even noticing.
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <h3>⚙️ Bootstrap & Responsive Frameworks</h3>
+          <p>
+            I'm fluent in Bootstrap and modern CSS frameworks, turning designs
+            into pixel-perfect, fully responsive builds quickly and efficiently
+            — without sacrificing quality or creativity.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="works">
+      <div class="works">
+        <div class="work-title">
+          <h2>Things I've Built & Loved</h2>
+          <p>
+            A glimpse into my world. Every project here started with a problem —
+            and ended with something I'm proud to put my name on.
+          </p>
+        </div>
+
+        <div class="work-items">
+          <div class="work-card">
+            <h3>🖥️ BrandPulse Website Redesign</h3>
+            <p>
+              A full UI overhaul for a fast-growing Lagos-based creative agency.
+              Clean grid layouts, bold typography, and a mobile-first build that
+              cut their bounce rate in half.
+            </p>
+            <div class="work-tags">
+              <span>UI Design</span>
+              <span>Bootstrap</span>
+              <span>Responsive</span>
+            </div>
+          </div>
+
+          <div class="work-card">
+            <h3>📱 Velox Media Portfolio Hub</h3>
+            <p>
+              A sleek, scroll-stopping portfolio platform built for a media
+              director. Dark theme, cinematic image galleries, and
+              buttery-smooth animations that let the work speak for itself.
+            </p>
+            <div class="work-tags">
+              <span>Web Development</span>
+              <span>UI Design</span>
+              <span>CSS Animations</span>
+            </div>
+          </div>
+        </div>
+        <div class="work-cta">
+          <!-- <p>That's just the tip of the iceberg. →</p> -->
+
+          <button>
+            <a href="#" class="works-cta"> View All My Work</a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+      <h2>What People Say</h2>
+
+      <div class="testimonial-items">
+        <div class="testimonial-card">
+          <p>
+            "Daniel has a rare gift — he understands both the technical and the
+            visual side of web development. Our site went from outdated to
+            outstanding. The Logixian delivered beyond what we imagined."
+          </p>
+          <p class="testimonial-author">
+            — Tunde A., Founder, BrandPulse Agency
+          </p>
+        </div>
+
+        <div class="testimonial-card">
+          <p>
+            "Working with Daniel felt effortless. He listened, he understood the
+            brief immediately, and the final product was clean, bold, and
+            exactly on brand. I'll be coming back for every project."
+          </p>
+          <p class="testimonial-author">
+            — Sade M., Creative Director, Velox Media
+          </p>
+        </div>
+
+        <div class="testimonial-card">
+          <p>
+            "What sets Daniel apart is his eye for detail. Nothing is ever 'good
+            enough' for him — it has to be right. My portfolio site looks like
+            it was built by a team of ten. Highly recommend The Logixian."
+          </p>
+          <p class="testimonial-author">
+            — Emeka R., Photographer & Visual Artist
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact">
+        <div class="contact-title">
+          <h2>Let's Build Something Bold.</h2>
+          <p>
+            Got a project in mind? An idea you can't stop thinking about? Or
+            just want to say hello? <br />My inbox is always open. Drop me a
+            message and let's see what we can create together.
+          </p>
+        </div>
+        <div class="contact-item">
+          <div>
+            <form class="contact-form">
+              <input type="text" placeholder="Your Name" required />
+              <input type="email" placeholder="Your Email" required />
+              <input
+                type="text"
+                placeholder="What are you working on?"
+                required
+              />
+              <textarea placeholder="Message" required></textarea>
+              <button type="submit">Send It Over →</button>
+            </form>
+          </div>
+          <div>
+            <h2>Prefer a direct approach?</h2>
+            <ul class="contact-links">
+              <li>📧 daniel@thelogixian.com</li>
+              <li>🐦 @thelogixian</li>
+              <li>💼 linkedin.com/in/danielobembe</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Designed with logic. Built with passion. — The Logixian</p>
+      <ul class="footer-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p>
+        &copy; 2025 Daniel Obembe. All rights reserved. Crafted by The Logixian.
+      </p>
+    </footer>
+  </body>
+</html>
